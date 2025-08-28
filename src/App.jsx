@@ -81,6 +81,8 @@ function App() {
 
   return (
     <>
+      <AuthorList authors={authors} />
+
       <FirstFunctionComponent />
       <FirstArrowComponent />
       <SecondComponent />
@@ -93,7 +95,6 @@ function App() {
       <button onClick={() => setCount((count) => count - 1)}>
         count is {count}
       </button>
-      <AuthorList authors={authors} />
     </>
   );
 }

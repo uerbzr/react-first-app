@@ -1,4 +1,5 @@
 import React from "react";
+import Author from "./Author";
 import "./AuthorList.css";
 
 function AuthorList({ authors }) {
@@ -8,7 +9,7 @@ function AuthorList({ authors }) {
         <h1>Authors Component</h1>
         <ul>
           {authors.map((author) => {
-            return <li key={author.id}>{author.name}</li>;
+            return <Author author={author} />;
           })}
         </ul>
       </div>
